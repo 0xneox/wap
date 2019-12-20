@@ -1,0 +1,850 @@
+<?php 
+/**
+ * Array of customizer default values.
+ *
+ * @package       Tube Ace
+ * @subpackage    Play
+ * @since         Play 1.0
+ * @link          http://tubeace.com
+ */
+
+
+$header_css = "/* Custom Logo */\n.custom-logo {\n\tdisplay:inline;\n\tpadding-left:8px;\n\tpadding-right:8px;\n}\n\n";
+$header_css.= "/* Site Title */\n#site-title {\n\tpadding-left:8px;\n\tpadding-right:8px;\n}\n\n";
+$header_css.= "/* Tagline */\n#tagline {\n\tpadding-left:8px;\n\tpadding-right:8px;\n}\n\n";
+$header_css.= "/* Force Tagline to new line when screen < 600px */\n@media only screen and (max-width: 599px) {\n#tagline {\n\tdisplay: block;\n}}\n\n";
+$header_css.= "/* Search Form Input */\n#search-form input {\n\tborder-width: 1px;\n}\n\n";
+$header_css.= "/* Search Form Button */\n#search-form button {\n\tborder-width: 1px;\n}\n\n";
+
+$navbar_css = "/* Navbar */\n#navbar {\n\tpadding-left:8px;\n\tpadding-right:8px;\n}\n\n";
+$navbar_css.= "/* Navbar List */\n#navbar ul {\n\tmargin: 0;\n\tpadding: 0;\n}\n\n";
+$navbar_css.= "/* Navbar List Item */\n#navbar ul li {\n\tmargin: 0;\n\tpadding: 0;\n}\n\n";
+$navbar_css.= "/* Navbar List Item Link */\n#navbar ul li a {\n\tpadding: 14px 10px;\n\tborder-width: 0 0 1px 0;\n\tborder-style: solid;\n}\n\n";
+
+$header_widget_menu_css = "/* Header Widget Area */\n.header-widget-area {\n\tpadding-left:16px;\n\tpadding-top:8px;\n}\n\n";
+$header_widget_menu_css.= "/* Preserve sub-menu indentation */\n.header-widget-area ul:not(.sub-menu):not(.children) {\n\tpadding: 0;\n}\n\n";
+$header_widget_menu_css.= "/* Header Widget Menu List Item */\n.header-widget-area ul li {\n\tlist-style-type: none;\n}\n\n";
+$header_widget_menu_css.= "/* Header Widget Menu List Item Link */\n.header-widget-area ul li a {\n\ttext-decoration: none;\n\tpadding: 4px 4px;\n\tdisplay: block;\n\tborder-width: 0 0 1px 0;\n\tborder-style: solid;\n}\n\n";    
+
+$content_css = "/* Content Area */\n#content {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+
+$left_sidebar_css = "/* Left Sidebar */\n#sidebar-left {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+
+$left_sidebar_widget_menu_css = "/* Preserve sub-menu indentation */\n.sidebar-left-widget-area ul:not(.sub-menu):not(.children) {\n\tpadding: 0;\n}\n\n";
+$left_sidebar_widget_menu_css.= "/* Left Sidebar Widget Menu List */\n.sidebar-left-widget-area ul {\n\tmargin: 0;\n\tlist-style-type: none;\n}\n\n";
+$left_sidebar_widget_menu_css.= "/* Left Sidebar Widget Menu List Item Link */\n.sidebar-left-widget-area ul li a {\n\ttext-decoration: none;\n\tpadding: 4px;\n\tborder-width: 0 0 1px 0;\n\tborder-style: solid;\n\tdisplay: block;\n}\n\n";
+$left_sidebar_widget_menu_css.= "/* Left Sidebar Widget Menu Title */\n.sidebar-left-widget-title {}\n\n";
+
+$right_sidebar_css = "/* Right Sidebar */\n#sidebar-right {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+
+$right_sidebar_widget_menu_css = "/* Preserve sub-menu indentation */\n.sidebar-right-widget-area ul:not(.sub-menu):not(.children) {\n\tpadding: 0;\n}\n\n";
+$right_sidebar_widget_menu_css.= "/* Right Sidebar Widget Menu List */.sidebar-right-widget-area ul {\n\tmargin: 0;\n\tlist-style-type: none;\n}\n\n";
+$right_sidebar_widget_menu_css.= "/* Right Sidebar Widget Menu List Item Link */\n.sidebar-right-widget-area ul li a {\n\ttext-decoration: none;\n\tpadding: 4px;\n\tborder-width: 0 0 1px 0;\n\tborder-style: solid;\n\tdisplay: block;\n}\n\n";
+$right_sidebar_widget_menu_css.= "/* Right Sidebar Widget Menu Title */\n.sidebar-right-widget-title {}\n\n";
+
+$preview_css = "/* Post Preview Outer */\n.post-preview {\n\tmargin: 0;\n\tpadding: 2px 2px;\n}\n\n";
+$preview_css.= "/* Post Preview */\n.post-preview-styling {\n\tborder-width: 1px;\n\tborder-style: solid;\n\toverflow: hidden;\n\tmargin: 0;\n\tpadding: 4px; 4px;\n}\n\n";
+$preview_css.= "/* Title */\na.preview-title {\n\tfont-weight: bold;\n\tdisplay: block;\n}\n\n.post-preview h2 {\n\tmargin: 0;\n}\n\n";
+$preview_css.= "/* Featured Image */\n.wp-post-image {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+$preview_css.= "/* Post Preview Images */\n.post-preview-styling img:not(.avatar, .post-ratings-image) {\n\twidth: 100%;\n\theight: auto;\n}\n\n";
+$preview_css.= "/* Duration */\n.post-preview-styling .duration{\n\topacity: 0.7;\n\ttop:8px;\n\tleft:8px;\n\tposition: absolute;\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+$preview_css.= "/* Embedded Content */\n.post-preview-styling iframe:not(.instagram-media), .post-preview-styling, .post-preview-styling embed {\n\tmax-width: 100%;\n\theight: auto;\n}\n\n";
+$preview_css.= "/* Clear Lines */\n.post-preview-tags, .post-preview-category, .post-preview-edit {\n\tclear: both;\n}\n\n";
+$preview_css.= "/* Rating */\n.post-preview-rating {\n\tpadding-right: 0;\n}\n\n";
+$preview_css.= "/* View Count */\n.post-preview-view-count {\n\ttext-align: right;\n\tpadding-left: 0;\n}\n\n";
+$preview_css.= "/* Tags */\n.post-preview-tags a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$preview_css.= "/* Categories */\n.post-preview-category a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$preview_css.= "/* Performers */\n.post-preview-performers a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$preview_css.= "/* Flexbox */\n.tubeaceplay-flexbox {\n\tdisplay:flex;\n\tflex-flow:row wrap;\n}\n\n";
+
+$sticky_preview_css = "/* Sticky Post Preview Outer */\n.sticky {\n\tmargin: 0;\n\tpadding: 2px 2px;\n}\n\n";
+$sticky_preview_css.= "/* Sticky Post Preview */\n.sticky-post-preview-styling {\n\tborder-width: 1px;\n\tborder-style: solid;\n\toverflow: hidden;\n\tmargin: 0;\n\tpadding: 4px; 4px;\n}\n\n";
+$sticky_preview_css.= "/* Title */\n.sticky .preview-title a {\n\tfont-weight: bold;\n\tdisplay: block;\n}\n\n.sticky-post-preview-styling h2 {\n\tmargin: 0;\n}\n\n";
+$sticky_preview_css.= "/* Featured Image */\n.sticky .wp-post-image {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+$sticky_preview_css.= "/* Post Preview Images */\n.sticky-post-preview-styling img:not(.avatar, .post-ratings-image) {\n\twidth: 100%;\n\theight: auto;\n}\n\n";
+$sticky_preview_css.= "/* Duration */\n.sticky-post-preview-styling .duration{\n\topacity: 0.7;\n\ttop:8px;\n\tleft:8px;\n\tposition: absolute;\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+$sticky_preview_css.= "/* Embedded Content */\n.sticky-post-preview-styling iframe:not(.instagram-media), .sticky-post-preview-styling object, .sticky-post-preview-styling embed {\n\tmax-width: 100%;\n\theight: auto;\n}\n\n";
+$sticky_preview_css.= "/* Clear Lines */\n.sticky-post-preview-tags, .sticky-post-preview-category, .sticky-post-preview-edit {\n\tclear: both;\n}\n\n";
+$sticky_preview_css.= "/* Rating */\n.sticky-post-preview-rating {\n\tpadding-right: 0;\n}\n\n";
+$sticky_preview_css.= "/* View Count */\n.sticky-post-preview-view-count {\n\ttext-align: right;\n\tpadding-left: 0;\n}\n\n";
+$sticky_preview_css.= "/* Tags */\n.sticky-post-preview-tags a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$sticky_preview_css.= "/* Categories */\n.sticky-post-preview-category a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$sticky_preview_css.= "/* Performers */\n.sticky-post-preview-performers a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$sticky_preview_css.= "/* Ribbon */\n.sticky .ribbon {\n\tposition: absolute;\n\tright: 1px;\n\ttop: 1px;\n\tz-index: 1;\n\toverflow: hidden;\n\twidth: 75px;\n\theight: 75px;\n\ttext-align: right;\n}\n\n";
+$sticky_preview_css.= "/* Ribbon Text Span */\n.sticky .ribbon span {\n\tfont-weight: bold;\n\ttext-transform: uppercase;\n\ttext-align: center;\n\tline-height: 20px;\n\ttransform: rotate(45deg);\n\t";
+$sticky_preview_css.= "-webkit-transform: rotate(45deg);\n\twidth: 100px;\n\tdisplay: block;\n\tbox-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);\n\tposition: absolute;\n\ttop: 19px; right: -21px;\n}\n\n";
+
+$comments_css = "/* Comments */\n#comments {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+$comments_css.= "/* Comment Item */\nli.comment, li.comment-reply {\n\tborder-width: 1px;\n\tborder-style: solid;\n\tmargin: 0;\n\tpadding: 0;\n\twidth: 100%;\n\tlist-style-type: none;\n}\n\n";
+$comments_css.= "/* Comment Reply Inputs */\n#comment, .comment-form-author, .comment-form-email, .comment-form-url{\n\tmax-width: 400px;\n}\n\n";
+
+$pagination_css = "/* Previous */\n.nav-links .prev{\n\tborder-width: 2px;\n\tborder-style: solid;\n\tpadding: 14px 14px;\n}\n\n";
+$pagination_css.= "/* Current */\n.nav-links .current{\n\tborder-width: 1px;\n\tborder-style: solid;\n\tpadding: 14px 14px;\n}\n\n";
+$pagination_css.= "/* Numbers */\n.nav-links .page-numbers:not(.prev):not(.next):not(.dots){\n\tborder-width: 1px;\n\tborder-style: solid;\n\tpadding: 14px 14px;\n\tmargin: 2px;\n\tdisplay: inline-block;\n}\n\n";
+$pagination_css.= "/* Dots */\n.nav-links .dots{\n\tborder-width: 0px;\n\tborder-style: solid;\n\tpadding: 14px 14px;\n}\n\n";
+$pagination_css.= "/* Next */\n.nav-links .next{\n\tborder-width: 2px;\n\tborder-style: solid;\n\tpadding: 14px 14px;\n}\n\n";
+$pagination_css.= "/* Hover */\n.nav-links .page-numbers:hover{\n\ttext-decoration: none;\n}\n\n";
+
+$footer_css = "/* Footer */\n#footer {\n\tborder-width: 1px 0 0 0;\n\tborder-style: solid;\n}\n\n";
+
+$footer_widget_menu_css = "/* Preserve sub-menu indentation */\n.footer-widget-area ul:not(.sub-menu):not(.children) {\n\tpadding: 0;\n}\n\n";
+$footer_widget_menu_css.= "/* Footer Widget Menu List */\n.footer-widget-area ul {\n\tmargin: 0;\n\tlist-style-type: none;\n}\n\n";
+$footer_widget_menu_css.= "/* Footer Widget Menu List Item Link */\n.footer-widget-area ul li a {\n\ttext-decoration: none;\n\tpadding: 4px;\n\tborder-width: 0 0 1px 0;\n\tborder-style: solid;\n\tdisplay: block;\n}\n\n";
+$footer_widget_menu_css.= "/* Footer Widget Menu Title */\n.footer-widget-title {}\n\n";
+
+$post_page_css = "/* Post Page */\n#post {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+$post_page_css.= "/* Post Page Images */\n#post img {\n\tmax-width: 100%;\n\theight: auto;\n}\n\n";
+$post_page_css.= "/* Post Page Ratings */\n#post .post-page-ratings{\n}\n\n";
+$post_page_css.= "/* Post Page Views */\n#post .post-page-views{\n\ttext-align:right;\n}\n\n";
+$post_page_css.= "/* Post Page Tags */\n#post .post-page-tags a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$post_page_css.= "/* Post Page Categories */\n#post .post-page-category a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$post_page_css.= "/* Post Page Performers */\n#post .post-page-performers a {\n\tpadding: 2px;\n\twhite-space: nowrap;\n\tline-height: 1.8em;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n}\n\n";
+$post_page_css.= "/* Post Page HR */\n#post hr {\n\tmargin-top: 20px;\n\tmargin-bottom: 20px;\n\tborder-style: solid;\n\tborder-top-width: 1px;\n}\n\n";
+$post_page_css.= "/* Post Page Avatar */\n#post .avatar {\n\tdisplay: inline;\n}\n\n";
+
+$page_page_css = "/* Page Page */\n#page {\n\tborder-width: 1px;\n\tborder-style: solid;\n\tpadding: 0px;\n}\n\n";
+$page_page_css.= "/* Page Page Images */\n#page img{\n\tmax-width: 100%;\n\theight: auto;\n}\n\n";
+
+$archive_page_css = "/* Archive Page Monthly */\n#archives-monthly {}\n\n";
+
+$attachment_page_css = "/* Attachment Page */\n#attachment {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+
+$author_page_css = "/* Author Page */\n#author {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+
+$search_page_css = "/* Search Page */\n#search-error-content {\n\tborder-width: 1px;\n\tborder-style: solid;\n\tpadding: 0px;\n}\n\n";
+
+$page_404_css = "/* 404 Not Found Page */\n#page-404 {\n\tborder-width: 1px;\n\tborder-style: solid;\n\tpadding: 0px;\n}\n\n";
+
+$calendar_css = "/* Calendar Widget */\n#wp-calendar {\n\twidth: 100%;\n}\n\n";
+$calendar_css.= "/* Calendar Widget Caption */\n#wp-calendar caption {\n\tcaption-side: top;\n}\n\n";
+$calendar_css.= "/* Calendar Widget Days */\n#wp-calendar thead th {\n\tpadding-bottom: 6px;\n\ttext-align: center;\n}\n\n";
+$calendar_css.= "/* Calendar Widget Cells */\n#wp-calendar tbody td {\n\tborder-width: 1px;\n\tborder-style: solid;\n\ttext-align: center;\n\tpadding: 4px;\n}\n\n";
+$calendar_css.= "/* Calendar Widget Next */\n#wp-calendar tfoot #next {\n\ttext-transform: uppercase;\n\ttext-align: right;\n}\n\n";
+$calendar_css.= "/* Calendar Widget Prev */\n#wp-calendar tfoot #prev {\n\ttext-transform: uppercase;\n\tpadding-top: 10px;\n}\n\n";
+$calendar_css.= "/* Calendar Widget Result Links */\n#wp-calendar tbody tr td a {\n\tdisplay: block;\n\twidth: 100%;\n}\n\n";
+
+$tag_cloud_css = "/* Tag Cloud Widget */\n.tagcloud {\n\tborder-width: 1px;\n\tborder-style: solid;\n}\n\n";
+$tag_cloud_css.= "/* Tag Cloud Widget Item */\n.tagcloud a {\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 6px;\n\tpadding: 2px;\n\twhite-space: nowrap;\n\ttext-decoration: none;\n\tline-height: 1.8em\n}\n\n";
+
+
+//create customizer defaults for /inc/customizer
+// $tubeaceplay_customizer_defaults must be created for default values of $wp_customize->add_setting
+// $tubeaceplay_defaults has values with '%' replaced with '%%' (escaped) below for get_theme_mod on front-end
+$tubeaceplay_defaults = $tubeaceplay_customizer_defaults = array(
+  'background_color' => '000000',
+
+  'layout_container_fluid' => true, //layout
+  'layout' => '0-10-2',
+
+  'header_container_fluid' => true, //header layout
+  'header_layout' => '1',
+
+  'header_show_site_title' => true, //header
+  'header_site_title_font_family' => 'Coda',
+  'header_site_title_font_size' => '36',
+  'header_site_title_font_size_unit' => 'px',      
+  'header_site_title_color' => '#1e73be',
+  'header_show_tagline' => true,
+  'header_tagline_font_family' => 'Basic',
+  'header_tagline_font_size' => '20',
+  'header_tagline_font_size_unit' => 'px',        
+  'header_tagline_color' => '#cccccc',
+  'header_show_search' => true,
+  'header_search_input_color' => '#333333',
+  'header_search_txt_color' => '#cccccc',
+  'header_search_border_color' => '#000000',
+  'header_search_button_color' => '#1e73be',
+  'header_search_button_txt_color' => '#cccccc',
+  'header_search_button_border_color' => '#000000',
+  'header_bg_color' => '#141414',
+  'header_transparent_bg' => false,
+  'header_font_family' => 'Helvetica, Arial, sans-serif',
+  'header_font_size' => '14',
+  'header_font_size_unit' => 'px',
+  'header_txt_color' => '#1e73be',
+  'header_link_color' => '#dd9933',
+  'header_border_color' => '#222222',
+  'header_container_position' => 'inside',
+  'header_css' => $header_css,
+
+  'navbar_show' => true, //navbar
+  'navbar_bg_color' => '#141414',
+  'navbar_transparent_bg' => true,
+  'navbar_item_bg_color' => '#141414',
+  'navbar_item_transparent_bg' => false,
+  'navbar_font_family' => 'Helvetica, Arial, sans-serif',
+  'navbar_font_size' => '16',
+  'navbar_font_size_unit' => 'px',      
+  'navbar_txt_color' => '#f1f1f1',
+  'navbar_border_color' => '#6183c6',
+  'navbar_hover_bg_color' => '#000000',
+  'navbar_hover_transparent_bg' => false,
+  'navbar_hover_txt_color' => '#ffffff',
+  'navbar_hover_border_color' => '#1e73be',
+  'navbar_current_bg_color' => '#1e73be',
+  'navbar_current_transparent_bg' => false,
+  'navbar_current_txt_color' => '#ffffff',
+  'navbar_current_border_color' => '#cccccc',
+  'navbar_css' => $navbar_css,
+
+  'header_background_image' => '', // header bg image
+  'header_background_image_repeat' => 'repeat',
+  'header_background_image_position' => 'center',
+  'header_background_image_attachment' => 'scroll',
+
+  'header_widget_menu_title_color' => '#1e73be',
+  'header_widget_menu_title_font_family' => 'Helvetica, Arial, sans-serif',
+  'header_widget_menu_title_font_size' => '16',
+  'header_widget_menu_title_font_size_unit' => 'px',
+  'header_widget_menu_title_txt_align' => 'left',
+  'header_widget_menu_bg_color' => '#000000',
+  'header_widget_menu_transparent_bg' => false,
+  'header_widget_menu_item_bg_color' => '#000000',
+  'header_widget_menu_item_transparent_bg' => false,
+  'header_widget_menu_font_family' => 'Helvetica, Arial, sans-serif',
+  'header_widget_menu_font_size' => '14',
+  'header_widget_menu_font_size_unit' => 'px',
+  'header_widget_menu_txt_align' => 'left',
+  'header_widget_menu_txt_color' => '#777777',
+  'header_widget_menu_border_color' => '#000000',
+  'header_widget_menu_hover_bg_color' => '#141414',
+  'header_widget_menu_hover_transparent_bg' => false,  
+  'header_widget_menu_hover_txt_color' => '#777777',
+  'header_widget_menu_hover_border_color' => '#1e73be',
+  'header_widget_menu_current_bg_color' => '#1e73be',
+  'header_widget_menu_current_transparent_bg' => false,  
+  'header_widget_menu_current_txt_color' => '#ffffff',
+  'header_widget_menu_current_border_color' => '#000000',
+  'header_widget_menu_css' => $header_widget_menu_css,
+
+  'content_bg_color' => '#000000', //content
+  'content_transparent_bg' => '1',
+  'content_border_color' => '#000000',
+  'content_background_image' => '',
+  'content_background_image_repeat' => 'repeat',
+  'content_background_image_position' => 'center',
+  'content_background_image_attachment' => 'scroll',  
+  'content_css' => $content_css,
+
+  'left_sidebar_bg_color' => '#141414', //left sidebar
+  'left_sidebar_transparent_bg' => false,
+  'left_sidebar_font_family' => 'Helvetica, Arial, sans-serif',
+  'left_sidebar_font_size' => '14',
+  'left_sidebar_font_size_unit' => 'px',       
+  'left_sidebar_txt_color' => '#1e73be',
+  'left_sidebar_link_color' => '#dd9933',
+  'left_sidebar_border_color' => '#000000',
+  'left_sidebar_background_image' => '',
+  'left_sidebar_background_image_repeat' => 'repeat',
+  'left_sidebar_background_image_position' => 'center',
+  'left_sidebar_background_image_attachment' => 'scroll',  
+  'left_sidebar_css' => $left_sidebar_css,
+  
+  'left_sidebar_widget_menu_title_color' => '#1e73be', //left sidebar widget menu
+  'left_sidebar_widget_menu_title_font_family' => 'Helvetica, Arial, sans-serif',
+  'left_sidebar_widget_menu_title_font_size' => '16',
+  'left_sidebar_widget_menu_title_font_size_unit' => 'px',
+  'left_sidebar_widget_menu_title_txt_align' => 'left',
+  'left_sidebar_widget_menu_bg_color' => '#000000',
+  'left_sidebar_widget_menu_transparent_bg' => false,    
+  'left_sidebar_widget_menu_item_bg_color' => '#000000',
+  'left_sidebar_widget_menu_item_transparent_bg' => false,  
+  'left_sidebar_widget_menu_font_family' => 'Helvetica, Arial, sans-serif',
+  'left_sidebar_widget_menu_font_size' => '14',
+  'left_sidebar_widget_menu_font_size_unit' => 'px',
+  'left_sidebar_widget_menu_txt_align' => 'left',    
+  'left_sidebar_widget_menu_txt_color' => '#777777',
+  'left_sidebar_widget_menu_border_color' => '#000000',
+  'left_sidebar_widget_menu_hover_bg_color' => '#141414',
+  'left_sidebar_widget_menu_hover_transparent_bg' => false,
+  'left_sidebar_widget_menu_hover_txt_color' => '#777777',
+  'left_sidebar_widget_menu_hover_border_color' => '#1e73be',
+  'left_sidebar_widget_menu_current_bg_color' => '#1e73be',
+  'left_sidebar_widget_menu_current_transparent_bg' => false,
+  'left_sidebar_widget_menu_current_txt_color' => '#ffffff',
+  'left_sidebar_widget_menu_current_border_color' => '#000000',
+  'left_sidebar_widget_menu_css' => $left_sidebar_widget_menu_css,
+
+  'right_sidebar_bg_color' => '#141414', //right sidebar
+  'right_sidebar_transparent_bg' => false,
+  'right_sidebar_font_family' => 'Helvetica, Arial, sans-serif',
+  'right_sidebar_font_size' => '14',
+  'right_sidebar_font_size_unit' => 'px',       
+  'right_sidebar_txt_color' => '#1e73be',
+  'right_sidebar_link_color' => '#dd9933',
+  'right_sidebar_border_color' => '#000000',
+  'right_sidebar_background_image' => '',
+  'right_sidebar_background_image_repeat' => 'repeat',
+  'right_sidebar_background_image_position' => 'center',
+  'right_sidebar_background_image_attachment' => 'scroll',    
+  'right_sidebar_css' => $right_sidebar_css,
+  
+  'right_sidebar_widget_menu_title_color' => '#1e73be', //right sidebar widget menu
+  'right_sidebar_widget_menu_title_font_family' => 'Helvetica, Arial, sans-serif',
+  'right_sidebar_widget_menu_title_font_size' => '16',
+  'right_sidebar_widget_menu_title_font_size_unit' => 'px',
+  'right_sidebar_widget_menu_title_txt_align' => 'left',  
+  'right_sidebar_widget_menu_bg_color' => '#000000',
+  'right_sidebar_widget_menu_transparent_bg' => false,      
+  'right_sidebar_widget_menu_item_bg_color' => '#000000',
+  'right_sidebar_widget_menu_item_transparent_bg' => false,    
+  'right_sidebar_widget_menu_font_family' => 'Helvetica, Arial, sans-serif',
+  'right_sidebar_widget_menu_font_size' => '14',
+  'right_sidebar_widget_menu_font_size_unit' => 'px',
+  'right_sidebar_widget_menu_txt_align' => 'left',        
+  'right_sidebar_widget_menu_txt_color' => '#777777',
+  'right_sidebar_widget_menu_border_color' => '#000000',
+  'right_sidebar_widget_menu_hover_bg_color' => '#141414',
+  'right_sidebar_widget_menu_hover_transparent_bg' => false,
+  'right_sidebar_widget_menu_hover_txt_color' => '#777777',
+  'right_sidebar_widget_menu_hover_border_color' => '#1e73be',
+  'right_sidebar_widget_menu_current_bg_color' => '#1e73be',
+  'right_sidebar_widget_menu_current_transparent_bg' => false,  
+  'right_sidebar_widget_menu_current_txt_color' => '#ffffff',
+  'right_sidebar_widget_menu_current_border_color' => '#000000',
+  'right_sidebar_widget_menu_css' => $right_sidebar_widget_menu_css,
+
+  'preview_show_title' => true, //preview
+  'preview_title_txt_color' => '#1e73be',
+  'preview_title_font_family' => 'Helvetica, Arial, sans-serif',
+  'preview_title_font_size' => '14',
+  'preview_title_font_size_unit' => 'px',
+  'preview_bg_color' => '#000000',
+  'preview_transparent_bg' => false,
+  'preview_font_family' => 'Helvetica, Arial, sans-serif',
+  'preview_font_size' => '12',
+  'preview_font_size_unit' => 'px',
+  'preview_txt_color' => '#666666',
+  'preview_link_color' => '#dd9933',
+  'preview_border_color' => '#000000',
+  'preview_excerpt_content' => 'excerpt',
+  'preview_excerpt_length' => '20',
+  'preview_featured_image_size' => 'large',
+  'preview_featured_image_border_color' => '#444444',
+  'preview_show_duration' => true,
+  'preview_duration_bg_color' => '#000000',
+  'preview_duration_transparent_bg' => false,
+  'preview_duration_txt_color' => '#ffffff',
+  'preview_duration_font_family' => 'Helvetica, Arial, sans-serif',
+  'preview_duration_font_size' => '10',
+  'preview_duration_font_size_unit' => 'px',
+  'preview_duration_border_color' => '#000000',
+  'preview_show_post_date' => false,
+  'preview_show_post_time' => false,
+  'preview_post_date_txt_color' => '#999999',
+  'preview_show_tags' => false,
+  'preview_tags_label' => 'Tags: ',
+  'preview_tags_separator' => ', ',
+  'preview_tags_label_color' => '#999999',
+  'preview_tags_txt_color' => '#1e73be',
+  'preview_tags_font_family' => 'Helvetica, Arial, sans-serif',
+  'preview_tags_font_size' => '14',
+  'preview_tags_font_size_unit' => 'px',    
+  'preview_tags_bg_color' => '#ffffff',
+  'preview_tags_transparent_bg' => true,
+  'preview_tags_border_color' => '#333333',
+  'preview_show_category' => false,
+  'preview_category_label' => 'Category: ',
+  'preview_category_separator' => ', ',
+  'preview_category_label_color' => '#999999',
+  'preview_category_txt_color' => '#1e73be',
+  'preview_category_font_family' => 'Helvetica, Arial, sans-serif',
+  'preview_category_font_size' => '14',
+  'preview_category_font_size_unit' => 'px',    
+  'preview_category_bg_color' => '#f1f1f1',
+  'preview_category_transparent_bg' => true,
+  'preview_category_border_color' => '#333333',
+  'preview_show_performers' => false,
+  'preview_performers_label' => 'Performers: ',
+  'preview_performers_separator' => ', ',
+  'preview_performers_label_color' => '#999999',
+  'preview_performers_txt_color' => '#1e73be',
+  'preview_performers_font_family' => 'Helvetica, Arial, sans-serif',
+  'preview_performers_font_size' => '14',
+  'preview_performers_font_size_unit' => 'px',    
+  'preview_performers_bg_color' => '#000000',
+  'preview_performers_transparent_bg' => true,
+  'preview_performers_border_color' => '#333333',
+  'preview_show_number_comments' => false,
+  'preview_link_to_comments' => true,
+  'preview_show_author' => false,
+  'preview_show_author_avatar' => true,
+  'preview_link_to_author' => true,
+  'preview_avatar_size' => '32',
+  'preview_show_rating' => true,
+  'preview_rating_txt_color' => '#999999',
+  'preview_rating_font_family' => 'Helvetica, Arial, sans-serif',
+  'preview_rating_font_size' => '12',
+  'preview_rating_font_size_unit' => 'px',  
+  'preview_show_view_count' => true,
+  'preview_view_count_txt_color' => '#999999',
+  'preview_view_count_font_family' => 'Helvetica, Arial, sans-serif',
+  'preview_view_count_font_size' => '12',
+  'preview_view_count_font_size_unit' => 'px',
+  'preview_layout_style' => 'flexbox',
+  'preview_fixed_height' => '200px',
+  'preview_xs_class' => 'col-xs-12',
+  'preview_sm_class' => 'col-sm-4',
+  'preview_md_class' => 'col-md-4',
+  'preview_lg_class' => 'col-lg-3',
+  'preview_background_image' => '',
+  'preview_background_image_repeat' => 'repeat',
+  'preview_background_image_position' => 'center',
+  'preview_background_image_attachment' => 'scroll',
+  'preview_css' => $preview_css,
+
+  'sticky_preview_show_label' => true, //sticky preview
+  'sticky_preview_label' => 'Featured',
+  'sticky_preview_label_txt_color' => '#ffffff',
+  'sticky_preview_label_bg_color' => '#dd3333',
+  'sticky_preview_label_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_label_font_size' => '10',
+  'sticky_preview_label_font_size_unit' => 'px',
+  'sticky_preview_show_title' => true,
+  'sticky_preview_title_txt_color' => '#1e73be',
+  'sticky_preview_title_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_title_font_size' => '16',
+  'sticky_preview_title_font_size_unit' => 'px',
+  'sticky_preview_bg_color' => '#000000',
+  'sticky_preview_transparent_bg' => false,
+  'sticky_preview_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_font_size' => '14',
+  'sticky_preview_font_size_unit' => 'px',        
+  'sticky_preview_txt_color' => '#666666',
+  'sticky_preview_link_color' => '#dd9933',
+  'sticky_preview_border_color' => '#000000',
+  'sticky_preview_featured_image_size' => 'large',
+  'sticky_preview_featured_image_border_color' => '#444444',
+  'sticky_preview_show_duration' => true,
+  'sticky_preview_duration_bg_color' => '#000000',
+  'sticky_preview_duration_transparent_bg' => false,
+  'sticky_preview_duration_txt_color' => '#ffffff',
+  'sticky_preview_duration_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_duration_font_size' => '10',
+  'sticky_preview_duration_font_size_unit' => 'px',
+  'sticky_preview_duration_border_color' => '#000000',  
+  'sticky_preview_show_post_date' => false,
+  'sticky_preview_show_post_time' => false,
+  'sticky_preview_post_date_txt_color' => '#999999',
+  'sticky_preview_show_tags' => false,
+  'sticky_preview_tags_label' => 'Tags: ',
+  'sticky_preview_tags_separator' => ', ',
+  'sticky_preview_tags_label_color' => '#999999',
+  'sticky_preview_tags_txt_color' => '#1e73be',
+  'sticky_preview_tags_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_tags_font_size' => '14',
+  'sticky_preview_tags_font_size_unit' => 'px',
+  'sticky_preview_tags_bg_color' => '#ededc4',
+  'sticky_preview_tags_transparent_bg' => true,  
+  'sticky_preview_tags_border_color' => '#333333',
+  'sticky_preview_show_category' => false,
+  'sticky_preview_category_label' => 'Category: ',
+  'sticky_preview_category_separator' => ', ',
+  'sticky_preview_category_label_color' => '#999999',
+  'sticky_preview_category_txt_color' => '#1e73be',
+  'sticky_preview_category_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_category_font_size' => '14',
+  'sticky_preview_category_font_size_unit' => 'px',
+  'sticky_preview_category_bg_color' => '#ededc4',
+  'sticky_preview_category_transparent_bg' => true,  
+  'sticky_preview_category_border_color' => '#333333',
+  'sticky_preview_show_performers' => false,
+  'sticky_preview_performers_label' => 'Performers: ',
+  'sticky_preview_performers_separator' => ', ',
+  'sticky_preview_performers_label_color' => '#999999',
+  'sticky_preview_performers_txt_color' => '#1e73be',
+  'sticky_preview_performers_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_performers_font_size' => '14',
+  'sticky_preview_performers_font_size_unit' => 'px',
+  'sticky_preview_performers_bg_color' => '#000000',
+  'sticky_preview_performers_transparent_bg' => true,  
+  'sticky_preview_performers_border_color' => '#333333',
+  'sticky_preview_show_number_comments' => false,
+  'sticky_preview_link_to_comments' => true,
+  'sticky_preview_show_author' => false,
+  'sticky_preview_show_author_avatar' => true,
+  'sticky_preview_link_to_author' => true,
+  'sticky_preview_avatar_size' => '32',
+  'sticky_preview_show_rating' => true,
+  'sticky_preview_rating_txt_color' => '#999999',
+  'sticky_preview_rating_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_rating_font_size' => '12',
+  'sticky_preview_rating_font_size_unit' => 'px',  
+  'sticky_preview_rating_count' => true,  
+  'sticky_preview_show_view_count' => true,
+  'sticky_preview_view_count_txt_color' => '#999999',
+  'sticky_preview_view_count_font_family' => 'Helvetica, Arial, sans-serif',
+  'sticky_preview_view_count_font_size' => '12',
+  'sticky_preview_view_count_font_size_unit' => 'px',  
+  'sticky_preview_background_image' => '',
+  'sticky_preview_background_image_repeat' => 'repeat',
+  'sticky_preview_background_image_position' => 'center',
+  'sticky_preview_background_image_attachment' => 'scroll',  
+  'sticky_preview_css' => $sticky_preview_css,
+
+  'comments_area_bg_color' => '#f1f1f1', //comments
+  'comments_area_transparent_bg' => true,
+  'comments_area_font_family' => 'Helvetica, Arial, sans-serif',
+  'comments_area_font_size' => '14',
+  'comments_area_font_size_unit' => 'px',        
+  'comments_area_txt_color' => '#999999',
+  'comments_area_link_color' => '#1e73be',
+  'comments_area_border_color' => '#000000',
+  'comment_show_author_avatar' => true,
+  'comment_link_to_author' => true,
+  'comment_avatar_size' => '32',
+  'comment_item_bg_color' => '#141414',
+  'comment_item_transparent_bg' => false,
+  'comment_item_font_family' => 'Helvetica, Arial, sans-serif',
+  'comment_item_font_size' => '14',
+  'comment_item_font_size_unit' => 'px',
+  'comment_item_txt_color' => '#999999',
+  'comment_item_link_color' => '#1e73be',
+  'comment_item_border_color' => '#000000',
+  'comment_reply_bg_color' => '#222222',
+  'comment_reply_transparent_bg' => false,
+  'comment_reply_font_family' => 'Helvetica, Arial, sans-serif',
+  'comment_reply_font_size' => '14',
+  'comment_reply_font_size_unit' => 'px',      
+  'comment_reply_txt_color' => '#999999',
+  'comment_reply_link_color' => '#1e73be',
+  'comment_reply_border_color' => '#000000',
+  'comment_form_input_bg_color' => '#333333',
+  'comment_form_input_font_family' => 'Helvetica, Arial, sans-serif',
+  'comment_form_input_font_size' => '14',
+  'comment_form_input_font_size_unit' => 'px',
+  'comment_form_input_txt_color' => '#cccccc',
+  'comment_form_input_border_color' => '#000000',
+  'comment_submit_bg_color' => '#1e73be',
+  'comment_submit_font_family' => 'Helvetica, Arial, sans-serif',
+  'comment_submit_font_size' => '14',
+  'comment_submit_font_size_unit' => 'px',      
+  'comment_submit_txt_color' => '#cccccc',
+  'comment_submit_border_color' => '#000000',
+  'comments_css' => $comments_css,
+/*
+  'pagination_bg_color' => '#f1f1f1',
+  'pagination_transparent_bg' => true,
+  'pagination_font_family' => 'Helvetica, Arial, sans-serif',
+  'pagination_font_size' => '14',
+  'pagination_font_size_unit' => 'px',           
+  'pagination_txt_color' => '#999999',
+  'pagination_border_color' => '#333333',
+  'pagination_css' => $pagination_css,
+*/
+
+  'pagination_prev_bg_color' => '#333333', // pagination
+  'pagination_prev_transparent_bg' => false,
+  'pagination_prev_label' => 'Prev',
+  'pagination_prev_font_family' => 'Helvetica, Arial, sans-serif',
+  'pagination_prev_font_size' => '16',
+  'pagination_prev_font_size_unit' => 'px',
+  'pagination_prev_txt_color' => '#cccccc',
+  'pagination_prev_border_color' => '#1e73be',
+
+  'pagination_current_bg_color' => '#1e73be',
+  'pagination_current_transparent_bg' => false,
+  'pagination_current_font_family' => 'Helvetica, Arial, sans-serif',
+  'pagination_current_font_size' => '16',
+  'pagination_current_font_size_unit' => 'px',
+  'pagination_current_txt_color' => '#cccccc',
+  'pagination_current_border_color' => '#1e73be',
+
+  'pagination_num_bg_color' => '#333333',
+  'pagination_num_transparent_bg' => false,
+  'pagination_num_per_side' => '2',
+  'pagination_num_font_family' => 'Helvetica, Arial, sans-serif',
+  'pagination_num_font_size' => '16',
+  'pagination_num_font_size_unit' => 'px',
+  'pagination_num_txt_color' => '#cccccc',
+  'pagination_num_border_color' => '#333333',
+
+  'pagination_num_hover_bg_color' => '#444444',
+  'pagination_num_hover_transparent_bg' => false,
+  'pagination_num_hover_font_family' => 'Helvetica, Arial, sans-serif',
+  'pagination_num_hover_font_size' => '16',
+  'pagination_num_hover_font_size_unit' => 'px',
+  'pagination_num_hover_txt_color' => '#cccccc',
+  'pagination_num_hover_border_color' => '#444444',
+
+  'pagination_dots_bg_color' => '#333333',
+  'pagination_dots_transparent_bg' => true,
+  'pagination_dots_font_family' => 'Helvetica, Arial, sans-serif',
+  'pagination_dots_font_size' => '16',
+  'pagination_dots_font_size_unit' => 'px',
+  'pagination_dots_txt_color' => '#cccccc',
+  'pagination_dots_border_color' => '#333333',
+
+
+  'pagination_next_bg_color' => '#333333',
+  'pagination_next_transparent_bg' => false,
+  'pagination_next_label' => 'Next',
+  'pagination_next_font_family' => 'Helvetica, Arial, sans-serif',
+  'pagination_next_font_size' => '16',
+  'pagination_next_font_size_unit' => 'px',
+  'pagination_next_txt_color' => '#cccccc',
+  'pagination_next_border_color' => '#1e73be',
+
+  'pagination_css' => $pagination_css,
+
+
+  'footer_container_fluid' => true, //footer
+  'footer_num_cols' => '4',
+
+  'footer_cols_xs_class' => 'col-xs-12',
+  'footer_cols_sm_class' => 'col-sm-6',
+  'footer_cols_md_class' => 'col-md-6',
+  'footer_cols_lg_class' => 'col-lg-3',
+
+  'footer_bg_color' => '#141414',
+  'footer_transparent_bg' => false,  
+  'footer_font_family' => 'Helvetica, Arial, sans-serif',
+  'footer_font_size' => '14',
+  'footer_font_size_unit' => 'px',
+  'footer_txt_color' => '#999999',
+  'footer_link_color' => '#1e73be',
+  'footer_border_color' => '#333333',
+  'footer_container_position' => 'inside',
+  'footer_background_image' => '',
+  'footer_background_image_repeat' => 'repeat',
+  'footer_background_image_position' => 'center',
+  'footer_background_image_attachment' => 'scroll',    
+  'footer_css' => $footer_css,
+
+  'footer_widget_menu_title_color' => '#1e73be', //footer widget menu
+  'footer_widget_menu_title_font_family' => 'Helvetica, Arial, sans-serif',
+  'footer_widget_menu_title_font_size' => '16',
+  'footer_widget_menu_title_font_size_unit' => 'px',
+  'footer_widget_menu_title_txt_align' => 'left',    
+  'footer_widget_menu_bg_color' => '#000000',
+  'footer_widget_menu_transparent_bg' => false,    
+  'footer_widget_menu_item_bg_color' => '#000000',
+  'footer_widget_menu_item_transparent_bg' => false,      
+  'footer_widget_menu_font_family' => 'Helvetica, Arial, sans-serif',
+  'footer_widget_menu_font_size' => '14',
+  'footer_widget_menu_font_size_unit' => 'px',
+  'footer_widget_menu_txt_align' => 'left',     
+  'footer_widget_menu_txt_color' => '#777777',
+  'footer_widget_menu_border_color' => '#000000',
+  'footer_widget_menu_hover_bg_color' => '#141414',
+  'footer_widget_menu_hover_transparent_bg' => false,
+  'footer_widget_menu_hover_txt_color' => '#777777',
+  'footer_widget_menu_hover_border_color' => '#1e73be',
+  'footer_widget_menu_current_bg_color' => '#1e73be',
+  'footer_widget_menu_current_transparent_bg' => false,
+  'footer_widget_menu_current_txt_color' => '#ffffff',
+  'footer_widget_menu_current_border_color' => '#000000',
+  'footer_widget_menu_css' => $footer_widget_menu_css,      
+
+  'post_page_title_position' => 'below', //post page
+  'post_page_title_font_family' => 'Helvetica, Arial, sans-serif', 
+  'post_page_title_font_size' => '36',
+  'post_page_title_font_size_unit' => 'px',
+  'post_page_title_txt_color' => '#666666',
+  'post_page_bg_color' => '#f1f1f1',
+  'post_page_transparent_bg' => true,
+  'post_page_font_family' => 'Helvetica, Arial, sans-serif',
+  'post_page_font_size' => '14',
+  'post_page_font_size_unit' => 'px',         
+  'post_page_txt_color' => '#666666',
+  'post_page_link_color' => '#1e73be',
+  'post_page_border_color' => '#000000',
+  'post_page_show_featured_image' => false,
+  'post_page_featured_image_size' => 'large',
+  'post_page_blockquote_bg_color' => '#333333',
+  'post_page_blockquote_transparent_bg' => false,
+  'post_page_blockquote_font_family' => 'Helvetica, Arial, sans-serif',
+  'post_page_blockquote_font_size' => '14',
+  'post_page_blockquote_font_size_unit' => 'px',
+  'post_page_blockquote_txt_color' => '#999999',
+  'post_page_blockquote_link_color' => '#1e73be',
+  'post_page_blockquote_border_color' => '#81d742',
+  'post_page_hr_color' => '#cccccc',
+  'post_page_show_tags' => true,
+  'post_page_tags_label' => 'Tags: ',
+  'post_page_tags_separator' => ', ',
+  'post_page_tags_label_color' => '#999999',
+  'post_page_tags_txt_color' => '#1e73be',
+  'post_page_tags_font_family' => 'Helvetica, Arial, sans-serif',
+  'post_page_tags_font_size' => '14',
+  'post_page_tags_font_size_unit' => 'px',    
+  'post_page_tags_bg_color' => '#f1f1f1',
+  'post_page_tags_transparent_bg' => true,
+  'post_page_tags_border_color' => '#333333',
+  'post_page_show_category' => true,
+  'post_page_category_label' => 'Category: ',
+  'post_page_category_separator' => ', ',
+  'post_page_category_label_color' => '#999999',
+  'post_page_category_txt_color' => '#1e73be',
+  'post_page_category_font_family' => 'Helvetica, Arial, sans-serif',
+  'post_page_category_font_size' => '14',
+  'post_page_category_font_size_unit' => 'px',    
+  'post_page_category_bg_color' => '#f1f1f1',
+  'post_page_category_transparent_bg' => true,
+  'post_page_category_border_color' => '#333333',
+  'post_page_show_performers' => true,
+  'post_page_performers_label' => 'Performers: ',
+  'post_page_performers_separator' => ', ',
+  'post_page_performers_label_color' => '#999999',
+  'post_page_performers_txt_color' => '#1e73be',
+  'post_page_performers_font_family' => 'Helvetica, Arial, sans-serif',
+  'post_page_performers_font_size' => '14',
+  'post_page_performers_font_size_unit' => 'px',    
+  'post_page_performers_bg_color' => '#f1f1f1',
+  'post_page_performers_transparent_bg' => true,
+  'post_page_performers_border_color' => '#333333',
+  'post_page_show_post_date' => true,
+  'post_page_show_post_time' => true,
+  'post_page_date_txt_color' => '#666666',
+  'post_page_date_label' => 'Published on ',
+  'post_page_show_author' => true,
+  'post_page_author_label' => 'by ',  
+  'post_page_show_author_avatar' => true,
+  'post_page_link_to_author' => true,
+  'post_page_avatar_size' => '32',
+  'post_page_author_txt_color' => '#1e73be',
+  'post_page_show_related' => true,
+  'post_page_related_label' => 'Related Videos',
+  'post_page_related_label_color' => '#999999',
+  'post_page_related_font_family' => 'Helvetica, Arial, sans-serif',
+  'post_page_related_font_size' => '24',
+  'post_page_related_font_size_unit' => 'px',
+  'post_page_related_num_results' => '12',
+  'post_page_css' => $post_page_css,
+
+  'page_page_title_font_family' => 'Helvetica, Arial, sans-serif', //page page
+  'page_page_title_font_size' => '36',
+  'page_page_title_font_size_unit' => 'px',       
+  'page_page_title_txt_color' => '#666666',   
+  'page_page_bg_color' => '#000000',
+  'page_page_transparent_bg' => true,
+  'page_page_font_family' => 'Helvetica, Arial, sans-serif',
+  'page_page_font_size' => '14',
+  'page_page_font_size_unit' => 'px',
+  'page_page_txt_color' => '#666666',
+  'page_page_link_color' => '#1e73be',
+  'page_page_border_color' => '#000000',
+  'page_page_css' => $page_page_css,
+
+  'archive_page_title_font_family' => 'Helvetica, Arial, sans-serif', //archive page
+  'archive_page_title_font_size' => '36',
+  'archive_page_title_font_size_unit' => 'px',      
+  'archive_page_title_txt_color' => '#666666',
+  'archive_page_show_monthly_list' => 'above',
+  'archive_page_monthly_list_title_color' => '#999999',
+  'archive_page_monthly_list_link_color' => '#1e73be',
+  'archive_page_css' => $archive_page_css,
+
+  'attachment_page_title_font_family' => 'Helvetica, Arial, sans-serif', //attachment page
+  'attachment_page_title_font_size' => '36',
+  'attachment_page_title_font_size_unit' => 'px',
+  'attachment_page_title_txt_color' => '#666666',   
+  'attachment_page_bg_color' => '#000000',
+  'attachment_page_transparent_bg' => true,
+  'attachment_page_font_family' => 'Helvetica, Arial, sans-serif',
+  'attachment_page_font_size' => '14',
+  'attachment_page_font_size_unit' => 'px',      
+  'attachment_page_txt_color' => '#999999',
+  'attachment_page_link_color' => '#1e73be',
+  'attachment_page_border_color' => '#000000',
+  'attachment_page_show_post_date' => true,
+  'attachment_page_show_post_time' => true,
+  'attachment_page_date_txt_color' => '#666666',
+  'attachment_page_date_label' => 'Published on ',
+  'attachment_page_show_author' => true,
+  'attachment_page_author_label' => 'by ',  
+  'attachment_page_show_author_avatar' => true,
+  'attachment_page_link_to_author' => true,
+  'attachment_page_avatar_size' => '32',
+  'attachment_page_author_txt_color' => '#1e73be',
+  'attachment_page_css' => $attachment_page_css,
+
+  'author_page_title_font_family' => 'Helvetica, Arial, sans-serif', //author page
+  'author_page_title_font_size' => '36',
+  'author_page_title_font_size_unit' => 'px',
+  'author_page_title_txt_color' => '#666666',
+  'author_page_content_bg_color' => '#000000',
+  'author_page_content_transparent_bg' => true,
+  'author_page_font_family' => 'Helvetica, Arial, sans-serif',
+  'author_page_font_size' => '14',
+  'author_page_font_size_unit' => 'px',        
+  'author_page_content_txt_color' => '#666666',
+  'author_page_content_link_color' => '#1e73be',
+  'author_page_content_border_color' => '#000000',
+  'author_page_show_website' => '1',
+  'author_page_show_bio' => '1',
+  'author_page_css' => $author_page_css,
+
+  'category_page_title_font_family' => 'Helvetica, Arial, sans-serif', //category page
+  'category_page_title_font_size' => '36',
+  'category_page_title_font_size_unit' => 'px',            
+  'category_page_title_txt_color' => '#666666',
+
+  'tag_page_title_font_family' => 'Helvetica, Arial, sans-serif', //tag page
+  'tag_page_title_font_size' => '36',
+  'tag_page_title_font_size_unit' => 'px',
+  'tag_page_title_txt_color' => '#666666',
+
+  'taxonomy_page_title_font_family' => 'Helvetica, Arial, sans-serif', //taxonomy page
+  'taxonomy_page_title_font_size' => '36',
+  'taxonomy_page_title_font_size_unit' => 'px',
+  'taxonomy_page_title_txt_color' => '#666666',  
+
+  'search_page_title_label' => 'Search Results for:',
+  'search_page_title_font_family' => 'Helvetica, Arial, sans-serif', //search page
+  'search_page_title_font_size' => '36',
+  'search_page_title_font_size_unit' => 'px',      
+  'search_page_title_txt_color' => '#666666',
+  'search_page_bg_color' => '#000000',
+  'search_page_transparent_bg' => true,
+  'search_page_content_label' => 'Sorry, nothing was found. Please try your search again.',  
+  'search_page_font_family' => 'Helvetica, Arial, sans-serif',
+  'search_page_font_size' => '14',
+  'search_page_font_size_unit' => 'px',
+  'search_page_txt_color' => '#666666',
+  'search_page_link_color' => '#1e73be',
+  'search_page_border_color' => '#000000',
+  'search_page_show_pages' => true,
+  'search_page_css' => $search_page_css,
+
+  'page_404_title_label' => '404 Not Found',
+  'page_404_title_font_family' => 'Helvetica, Arial, sans-serif', //404 page
+  'page_404_title_font_size' => '36',
+  'page_404_title_font_size_unit' => 'px',       
+  'page_404_title_txt_color' => '#666666',
+  'page_404_bg_color' => '#000000',
+  'page_404_transparent_bg' => true,
+  'page_404_content_label' => 'Sorry, nothing was found. Please check the link or maybe try a search below.',  
+  'page_404_font_family' => 'Helvetica, Arial, sans-serif',
+  'page_404_font_size' => '14',
+  'page_404_font_size_unit' => 'px',
+  'page_404_txt_color' => '#666666',
+  'page_404_link_color' => '#1e73be',
+  'page_404_border_color' => '#000000',
+  'page_404_css' => $page_404_css,
+
+  'calendar_bg_color' => '#333333', // calendar
+  'calendar_hover_bg_color' => '#777777',
+  'calendar_font_family' => 'Helvetica, Arial, sans-serif',
+  'calendar_font_size' => '12',
+  'calendar_font_size_unit' => 'px',      
+  'calendar_month_color' => '#777777',
+  'calendar_days_color' => '#999999',
+  'calendar_border_color' => '#000000',
+  'calendar_txt_color' => '#ffffff',
+  'calendar_link_color' => '#1e73be',
+  'calendar_pagination_color' => '#999999',
+  'calendar_css' => $calendar_css,
+
+  'tag_cloud_bg_color' => '#141414', //tag cloud
+  'tag_cloud_font_family' => 'Helvetica, Arial, sans-serif',
+  'tag_cloud_border_color' => '#141414',
+  'tag_cloud_item_txt_color' => '#1e73be',
+  'tag_cloud_item_bg_color' => '#000000',
+  'tag_cloud_item_border_color' => '#333333',
+  'tag_cloud_css' => $tag_cloud_css,
+);
+
+$tubeaceplay_defaults = str_replace('%','%%', $tubeaceplay_defaults); 
+
+?>
